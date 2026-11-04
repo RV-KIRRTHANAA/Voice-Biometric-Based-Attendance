@@ -1,0 +1,53 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+venv/
+env/
+
+# Environment & Secrets (Exclude real secrets, explicitly allow .env.example)
+.env
+.env.*
+.env.local
+!.env.example
+
+# Database and Live Biometric Embeddings (DO NOT COMMIT ROOT DATA FOLDER)
+/data/
+*.db
+*.sqlite
+*.sqlite3
+
+# Audio Recordings (Keep raw WAVs and captured audio out of Git)
+*.wav
+*.mp3
+*.flac
+*.ogg
+recordings/
+/recordings/
+
+# Pretrained Model Weights (Downloaded automatically from Hugging Face / Torch Hub)
+pretrained_models/
+
+# Test & Evaluation Outputs
+.pytest_cache/
+*.png
+evaluation_results/
+
+# Android Build & Local Configuration
+local.properties
+android-demo/local.properties
+.gradle/
+android-demo/.gradle/
+build/
+android-demo/build/
+android-demo/app/build/
+*.apk
+*.aab
+
+# IDE & OS Configuration
+.vscode/
+.idea/
+android-demo/.idea/
+*.iml
+.DS_Store
+Thumbs.db
